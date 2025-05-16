@@ -8,14 +8,13 @@ import routeUsers from './src/routes/users.route.js'; // Assure-toi d'avoir ce f
 
 import cors from 'cors';
 
-app.use(cors());
-
 dotenv.config();
 
 const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // Morgan pour les erreurs 500
 const errorLogStream = fs.createWriteStream(path.resolve('error.log'), { flags: 'a' });
