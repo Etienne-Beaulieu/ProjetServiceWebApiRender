@@ -1,7 +1,7 @@
 import db from '../config/db.js';
 
 const model = {
-    // Créer un utilisateur
+    // Insert un usager dans la bd
     createUser: async ({ nom, prenom, email, apiKey, password }) => {
         const result = await db.query(
             `INSERT INTO utilisateur (nom, prenom, courriel, cle_api, password)
@@ -11,7 +11,7 @@ const model = {
         return result.rows[0].id;
     },
 
-    // Trouver un utilisateur par email
+    // Trouver un utilisateur par email pour savoir si il existe
     findByEmail: async (email) => {
         const result = await db.query(`SELECT * FROM utilisateur WHERE courriel = $1`, [email]);
         return result.rows[0];
@@ -26,7 +26,7 @@ const model = {
         return result.rows[0];
     },
 
-    // Mettre à jour la clé API
+    // Mettre à jour la cle API
     updateApiKey: async (userId, newKey) => {
         await db.query(`UPDATE utilisateur SET cle_api = $1 WHERE id = $2`, [newKey, userId]);
     }

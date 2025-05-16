@@ -1,7 +1,15 @@
 import db from '../config/db.js';
 
 const model = {
-    // Récupérer toutes les tâches d'un utilisateur
+    // Recuperer toute les taches
+    getAllTaches: async () => {
+        const result = await db.query(
+            `SELECT * FROM taches`,
+        );
+        return result.rows;
+    },
+
+    // Select toute les taches d'un user
     getAllTachesByUser: async (userId, showAll) => {
         const query = showAll
             ? `SELECT * FROM taches WHERE utilisateur_id = $1`
@@ -11,7 +19,7 @@ const model = {
         return result.rows;
     },
 
-    // Détail d'une tâche + sous-tâches associées
+    // Une tache selon id
     getTacheDetails: async (tacheId) => {
         const res = await db.query(`SELECT * FROM taches WHERE id = $1`, [tacheId]);
         if (res.rows.length === 0) return null;
@@ -27,7 +35,7 @@ const model = {
         return tache;
     },
 
-    // Créer une tâche
+    // Creer une tache
     createTache: async (data, userId) => {
         const { titre, description, date_debut, date_echeance, complete } = data;
         const result = await db.query(
@@ -38,7 +46,7 @@ const model = {
         return result.rows[0].id;
     },
 
-    // Modifier une tâche (sauf le statut)
+    // Modifier une tache
     updateTache: async (id, data) => {
         const { titre, description, date_debut, date_echeance } = data;
         await db.query(
@@ -48,20 +56,20 @@ const model = {
         return true;
     },
 
-    // Modifier uniquement le statut
+    // Modifier le statut d'une tache
     updateStatutTache: async (id, complete) => {
         await db.query(`UPDATE taches SET complete = $1 WHERE id = $2`, [complete, id]);
         return true;
     },
 
-    // Supprimer une tâche
+    // Supprimer une tache
     deleteTache: async (id) => {
         await db.query(`DELETE FROM sous_taches WHERE tache_id = $1`, [id]);
         await db.query(`DELETE FROM taches WHERE id = $1`, [id]);
         return true;
     },
 
-    // Ajouter une sous-tâche
+    // Ajouter une sous-tache
     addSousTache: async (tacheId, data) => {
         const { titre, complete } = data;
         const result = await db.query(
@@ -71,25 +79,25 @@ const model = {
         return result.rows[0].id;
     },
 
-    // Modifier une sous-tâche
+    // Modifier une sous-tache
     updateSousTache: async (id, titre) => {
         await db.query(`UPDATE sous_taches SET titre = $1 WHERE id = $2`, [titre, id]);
         return true;
     },
 
-    // Modifier le statut d’une sous-tâche
+    // Modifier le statut d’une sous-tache
     updateStatutSousTache: async (id, complete) => {
         await db.query(`UPDATE sous_taches SET complete = $1 WHERE id = $2`, [complete, id]);
         return true;
     },
 
-    // Supprimer une sous-tâche
+    // Supprimer une sous-tache
     deleteSousTache: async (id) => {
         await db.query(`DELETE FROM sous_taches WHERE id = $1`, [id]);
         return true;
     },
 
-
+    // Trouver le id d'un user avec sa clef api
     getUserByApiKey: async (apiKey) => {
         const res = await db.query(
             `SELECT id FROM utilisateur WHERE cle_api = $1`,

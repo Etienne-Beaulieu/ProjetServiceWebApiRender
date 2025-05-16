@@ -1,17 +1,17 @@
 import Tache from '../models/taches.model.js';
 
 const controller = {
+    // Fonction qui query dans le modele toute les taches
     getAllTaches: async (req, res, next) => {
         try {
-            const userId = req.headers['authorization'];
-            const all = req.query.all === 'true';
-            const taches = await Tache.getAllTachesByUser(userId, all);
+            const taches = await Tache.getAllTaches();
             res.json(taches);
         } catch (err) {
             next(err);
         }
     },
 
+    // Fonction qui query dans le modele les taches selon le id d'une tache
     getTacheDetails: async (req, res, next) => {
         try {
             const tache = await Tache.getTacheDetails(req.params.id);
@@ -22,6 +22,7 @@ const controller = {
         }
     },
 
+    // Fonction pour insert la tache avec le modele
     createTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -37,6 +38,7 @@ const controller = {
         }
     },
 
+    // Fonction pour update la tache avec le modele
     updateTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -49,6 +51,7 @@ const controller = {
         }
     },
 
+    // Fonction pour update le statut complete avec le modele
     updateStatutTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -61,6 +64,7 @@ const controller = {
         }
     },
 
+    // Fonction pour supprimer une tache avec le modele
     deleteTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -73,6 +77,7 @@ const controller = {
         }
     },
 
+    // Fonction pour ajouter une sous-taches avec le modele
     addSousTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -86,6 +91,7 @@ const controller = {
         }
     },
 
+    // Fonction pour updater une sous-taches avec le modele
     updateSousTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -99,6 +105,7 @@ const controller = {
         }
     },
 
+    // Fonction pour updater le statut d'une sous-taches avec le modele
     updateStatutSousTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -112,6 +119,7 @@ const controller = {
         }
     },
 
+    // Fonction pour supprimer une sous-taches avec le modele
     deleteSousTache: async (req, res, next) => {
         try {
             const apiKey = req.headers['authorization'];
@@ -125,6 +133,7 @@ const controller = {
         }
     },
 
+    // Fonction qui query dans le modele les taches selon le id d'un user
     getAllTachesByUserId: async (req, res, next) => {
     try {
             const userId = req.params.userId;

@@ -267,3 +267,15 @@
     at async Object.addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:67:24)
     at async addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:82:13)
 ::1 - - [16/May/2025:00:55:29 +0000] "POST /api/taches/4/sous-taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T02:40:56.401Z - ReferenceError: userId is not defined
+    at Object.getAllTaches (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:8:14)
+    at getAllTaches (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:6:40)
+    at Layer.handle [as handle_request] (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:175:3)
+::1 - - [16/May/2025:02:40:56 +0000] "GET /api/taches HTTP/1.1" 500 37 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"

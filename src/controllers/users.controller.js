@@ -4,6 +4,7 @@ import crypto from 'crypto';
 const generateApiKey = () => crypto.randomBytes(15).toString('hex');
 
 const controller = {
+    // Fonction pour ajouter un user a la bd avec le modele
     registerUser: async (req, res, next) => {
         try {
             const { nom, prenom, email, password } = req.body;
@@ -25,6 +26,7 @@ const controller = {
         }
     },
 
+    // Fonction pour recuperer ou regenerer la cle api selon true ou false regenerate
     getOrGenerateApiKey: async (req, res, next) => {
         try {
             const { email, password, regenerate } = req.body;

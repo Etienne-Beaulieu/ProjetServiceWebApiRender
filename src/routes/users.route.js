@@ -3,10 +3,10 @@ import userController from '../controllers/users.controller.js';
 
 const router = express.Router();
 
-// Ajouter un utilisateur
+// Route pour ajouter un utilisateur
 router.post('/register', userController.registerUser);
 
-// Récupérer ou regénérer une clé API
+// Route pour recuperer ou regenerer une cle API
 router.post('/apikey', userController.getOrGenerateApiKey);
 
 export default router;

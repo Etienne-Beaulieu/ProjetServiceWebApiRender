@@ -6,15 +6,18 @@ import path from 'path';
 import routerTaches from './src/routes/taches.route.js';
 import routeUsers from './src/routes/users.route.js'; // Assure-toi d'avoir ce fichier
 
+import cors from 'cors';
+
+app.use(cors());
+
 dotenv.config();
 
-const hostname = 'localhost';
 const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
 
-// Logger pour les erreurs 500
+// Morgan pour les erreurs 500
 const errorLogStream = fs.createWriteStream(path.resolve('error.log'), { flags: 'a' });
 app.use(morgan('dev'));
 app.use(morgan('combined', {
@@ -22,7 +25,6 @@ app.use(morgan('combined', {
   stream: errorLogStream
 }));
 
-// Routes simples
 app.get('/', (req, res) => {
     res.send("<h1>Etienne Beaulieu</h1>");
 });
@@ -31,11 +33,11 @@ app.get('/api', (req, res) => {
     res.send("<h1>Bienvenue sur mon API de gestion de tâches!</h1>");
 });
 
-// Routes API
+// Routes importees
 app.use('/api/taches', routerTaches);
 app.use('/api/users', routeUsers);
 
-// Gestion des erreurs
+// Log dans error.log
 app.use((err, req, res, next) => {
     console.error(err.stack);
     fs.appendFileSync('error.log', `${new Date().toISOString()} - ${err.stack}\n`);
