@@ -1,0 +1,269 @@
+2025-04-16T17:59:39.427Z - TypeError: db.execute is not a function
+    at Object.getAllTachesByUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:9:33)
+    at getAllTaches (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:8:40)
+    at Layer.handle [as handle_request] (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:175:3)
+::1 - - [16/Apr/2025:17:59:39 +0000] "GET /api/taches HTTP/1.1" 500 37 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+2025-04-16T18:02:30.522Z - error: column "user_id" does not exist
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.getAllTachesByUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:10:22)
+    at async getAllTaches (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:8:28)
+::1 - - [16/Apr/2025:18:02:30 +0000] "GET /api/taches HTTP/1.1" 500 37 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+2025-04-16T18:17:05.055Z - ReferenceError: result is not defined
+    at Object.getAllTachesByUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:11:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getAllTaches (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:8:28)
+::1 - - [16/Apr/2025:18:17:05 +0000] "GET /api/taches HTTP/1.1" 500 37 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+2025-04-16T18:29:18.353Z - SyntaxError: Expected double-quoted property name in JSON at position 114 (line 6 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-04-16T18:29:25.692Z - SyntaxError: Expected double-quoted property name in JSON at position 117 (line 6 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-04-16T18:30:58.037Z - SyntaxError: Expected double-quoted property name in JSON at position 117 (line 6 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-04-16T18:31:07.453Z - SyntaxError: Expected double-quoted property name in JSON at position 114 (line 6 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-04-16T18:47:10.735Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:47:10 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:47:49.559Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:47:49 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:48:51.604Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:48:51 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:50:34.358Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:50:34 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:21.835Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:21 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:22.621Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:22 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:23.342Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:23 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:24.145Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:24 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:24.983Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:24 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:25.742Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:25 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:26.568Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:26 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:28.014Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:28 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:28.806Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:28 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-04-16T18:51:39.697Z - error: value too long for type character varying(30)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/users.model.js:6:24)
+    at async registerUser (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/users.controller.js:20:28)
+::1 - - [16/Apr/2025:18:51:39 +0000] "POST /api/users/register HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:11:56.979Z - error: null value in column "titre" of relation "taches" violates not-null constraint
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:11:56 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:14:37.941Z - SyntaxError: Expected double-quoted property name in JSON at position 47 (line 4 column 1)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-16T00:16:57.750Z - error: invalid input syntax for type date: "Test"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:16:57 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:17:13.923Z - error: null value in column "date_debut" of relation "taches" violates not-null constraint
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:17:13 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:22:29.561Z - error: invalid input syntax for type integer: "60707fd9518728474078d855ab7778"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:22:29 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:22:35.218Z - error: invalid input syntax for type integer: "60707fd9518728474078d855ab7778"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:22:35 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:22:40.312Z - error: invalid input syntax for type integer: "60707fd9518728474078d855ab7778"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:22:40 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:22:44.190Z - error: invalid input syntax for type integer: "60707fd9518728474078d855ab7778"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:22:44 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:23:40.259Z - error: invalid input syntax for type integer: "60707fd9518728474078d855ab7778"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:33:24)
+    at async createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:28:24)
+::1 - - [16/May/2025:00:23:40 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:34:52.349Z - ReferenceError: User is not defined
+    at createTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:30:28)
+    at Layer.handle [as handle_request] (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\express\lib\router\index.js:47:12)
+::1 - - [16/May/2025:00:34:52 +0000] "POST /api/taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:41:16.306Z - error: null value in column "titre" of relation "taches" violates not-null constraint
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.updateTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:44:9)
+    at async updateTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:45:13)
+::1 - - [16/May/2025:00:41:16 +0000] "PUT /api/taches/4 HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:46:05.758Z - error: null value in column "titre" of relation "taches" violates not-null constraint
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.updateTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:44:9)
+    at async updateTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:45:13)
+::1 - - [16/May/2025:00:46:05 +0000] "PUT /api/taches/4 HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:46:47.775Z - SyntaxError: Expected ',' or '}' after property value in JSON at position 16 (line 3 column 3)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-05-16T00:46:53.950Z - error: null value in column "titre" of relation "taches" violates not-null constraint
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.updateTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:44:9)
+    at async updateTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:45:13)
+::1 - - [16/May/2025:00:46:53 +0000] "PUT /api/taches/4 HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:53:31.294Z - error: insert or update on table "sous_taches" violates foreign key constraint "sous_taches_tache_id_fkey"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:67:24)
+    at async addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:82:13)
+::1 - - [16/May/2025:00:53:31 +0000] "POST /api/taches/4/sous-taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:54:36.517Z - error: bind message supplies 3 parameters, but prepared statement "" requires 2
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:67:24)
+    at async addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:82:13)
+::1 - - [16/May/2025:00:54:36 +0000] "POST /api/taches/4/sous-taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
+2025-05-16T00:55:29.863Z - error: insert or update on table "sous_taches" violates foreign key constraint "sous_taches_tache_id_fkey"
+    at C:\Users\etien\Desktop\Cegep\Services Web\Services_web\Projet\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/models/taches.model.js:67:24)
+    at async addSousTache (file:///C:/Users/etien/Desktop/Cegep/Services%20Web/Services_web/Projet/src/controllers/taches.controller.js:82:13)
+::1 - - [16/May/2025:00:55:29 +0000] "POST /api/taches/4/sous-taches HTTP/1.1" 500 37 "-" "PostmanRuntime/7.43.3"
