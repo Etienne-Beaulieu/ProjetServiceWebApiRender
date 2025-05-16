@@ -43,6 +43,6 @@ app.use((err, req, res, next) => {
 });
 
 // Démarrer le serveur
-app.listen(port, hostname, () => {
-    console.log(`Le serveur est lancé à l'adresse http://${hostname}:${port}/`);
+app.listen(port, () => {
+    console.log(`Le serveur est lancé sur le port ${port}`);
 });
